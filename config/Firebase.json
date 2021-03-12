@@ -1,0 +1,23 @@
+import * as firebase from 'firebase';
+
+// Optionally import the services that you want to use
+//import "firebase/auth";
+//import "firebase/database";
+//import "firebase/firestore";
+//import "firebase/functions";
+//import "firebase/storage";
+
+// Initialize Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyA_gy2K-1FKpBFePElOUkKK63OlF3p6NfA",
+    authDomain: "my-app-fd007.firebaseapp.com",
+    projectId: "my-app-fd007",
+    storageBucket: "my-app-fd007.appspot.com",
+    messagingSenderId: "25085316496",
+    appId: "1:25085316496:web:4714d8479ea1eb882c3715",
+    measurementId: "G-M98JBLX98W"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+export default db;
